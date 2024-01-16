@@ -1,0 +1,34 @@
+<form (ngSubmit)="guardarEdicion()" class="mat-elevation-z2" style="padding: 25px;">
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>IdUsuario</mat-label>
+          <input matInput [(ngModel)]="usuarioEditado.idUsuario" name="edad" type="number" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellido Paterno</mat-label>
+          <input matInput [(ngModel)]="usuarioEditado.apPaterno" name="apPaterno" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellido Materno</mat-label>
+          <input matInput [(ngModel)]="usuarioEditado.apMaterno" name="apMaterno">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="usuarioEditado.nombre" name="nombre" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Edad</mat-label>
+          <input matInput [(ngModel)]="usuarioEditado.edad" name="edad" type="number" required>
+        </mat-form-field>
+    </p>
+  
+    <button mat-raised-button color="primary" type="submit">Editar Usuario</button>
+</form>

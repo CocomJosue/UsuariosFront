@@ -1,0 +1,28 @@
+<form (ngSubmit)="registrarUsuario()" class="mat-elevation-z2" style="padding: 25px;">
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellido Paterno</mat-label>
+          <input matInput [(ngModel)]="nuevoUsuario.apPaterno" name="apPaterno" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellido Materno</mat-label>
+          <input matInput [(ngModel)]="nuevoUsuario.apMaterno" name="apMaterno">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="nuevoUsuario.nombre" name="nombre" required>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Edad</mat-label>
+          <input matInput [(ngModel)]="nuevoUsuario.edad" name="edad" type="number" required>
+        </mat-form-field>
+    </p>
+  
+    <button mat-raised-button color="primary" type="submit">Registrar Usuario</button>
+</form>

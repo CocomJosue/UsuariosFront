@@ -1,0 +1,9 @@
+<form (ngSubmit)="eliminarUsuario()" class="mat-elevation-z2" style="padding: 25px;">
+    <p>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Apellido Paterno</mat-label>
+          <input matInput [(ngModel)]="IdUsuario" name="apPaterno" required>
+        </mat-form-field>
+    </p>
+    <button mat-raised-button color="warn" type="submit">Borrar Usuario</button>
+</form>

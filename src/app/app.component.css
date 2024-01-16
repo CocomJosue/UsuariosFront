@@ -1,0 +1,22 @@
+/* usuarios.component.css */
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-usuarios th, .tabla-usuarios td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabla-usuarios th {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-usuarios tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
